@@ -1,6 +1,7 @@
 const { default: axios } = require('axios');
 const config = require('../../../config');
 const { parseItem, parseDetailItem } = require('../utils');
+const { AUTHOR } = require('../constants');
 
 const getItems = async (res, req) => {
   const search = req.query.q;
@@ -19,10 +20,7 @@ const getItems = async (res, req) => {
     const items = response.data.results.map((item) => parseItem(item));
 
     return res.status(200).json({
-      author: {
-        name: 'Valentina',
-        lastname: 'Tironi',
-      },
+      author: AUTHOR,
       items,
       categories,
     });
@@ -63,10 +61,7 @@ const getItem = async (res, req) => {
     });
 
     return res.status(200).json({
-      author: {
-        name: 'Valentina',
-        lastname: 'Tironi',
-      },
+      author: AUTHOR,
       item,
     });
   } catch (e) {

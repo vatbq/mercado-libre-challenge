@@ -1,15 +1,18 @@
 import { useState } from "react";
 import { createSearchParams, useNavigate } from "react-router-dom";
+
 import SearchIcon from "assets/searchIconBig.png";
+import { Paths } from "constants/paths";
 
 import classes from "./Search.module.scss";
-import { Paths } from "constants/paths";
 
 const Search = () => {
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
 
   const handleOnSearch = () => {
+    if (!search) return;
+
     navigate({
       pathname: Paths.Items,
       search: createSearchParams({ search }).toString(),

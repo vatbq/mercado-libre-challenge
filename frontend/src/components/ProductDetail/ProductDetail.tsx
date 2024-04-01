@@ -1,6 +1,7 @@
 import { Product } from "types/product";
 import { getProductPrice } from "utils/product";
 import Breadcrumb from "components/Breadcrumb";
+import { ProductCondition } from "constants/product";
 
 import classes from "./ProductDetail.module.scss";
 
@@ -26,7 +27,7 @@ const ProductDetail = ({ product, categories }: ProductProps) => {
           <div className={classes.productInfo}>
             <div>
               <p className={classes.condition}>
-                {product.condition === "new" ? "Nuevo" : "Usado"} -{" "}
+                {product.condition === ProductCondition.New ? "Nuevo" : "Usado"} -{" "}
                 {product.sold_quantity} vendidos
               </p>
               <h2 className={classes.title}>{product.title}</h2>

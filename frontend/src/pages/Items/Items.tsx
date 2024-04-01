@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { useSearchParams } from "react-router-dom";
+
 import ErrorMessage from "components/ErrorMessage";
 import Header from "components/Header";
 import Products from "components/Products";
-import { useSearchParams } from "react-router-dom";
 import { getItems } from "services/products";
 import { Product } from "types/product";
 
