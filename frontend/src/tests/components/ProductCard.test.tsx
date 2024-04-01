@@ -24,7 +24,11 @@ const ProductCardWrapped = ({ product }: { product: Product }) => (
 
 describe("<ProductCard />", () => {
   beforeEach(() => {
-    productUtils.getProductPrice.mockImplementation(() => "100.99");
+    (
+      productUtils.getProductPrice as jest.MockedFunction<
+        typeof productUtils.getProductPrice
+      >
+    ).mockImplementation(() => "100.99");
   });
 
   it("navigates to the product detail page on click", () => {

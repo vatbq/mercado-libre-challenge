@@ -14,7 +14,11 @@ const categoriesMock = ["Electronics", "Gadgets"];
 
 describe("<ProductDetail />", () => {
   beforeEach(() => {
-    productUtils.getProductPrice.mockImplementation(() => "1,234.56");
+    (
+      productUtils.getProductPrice as jest.MockedFunction<
+        typeof productUtils.getProductPrice
+      >
+    ).mockImplementation(() => "1,234.56");
   });
 
   it("renders ProgramCard unchanged", () => {
