@@ -1,0 +1,12 @@
+@import "styles/_colors";
+
+.root {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  color: $error-color;
+  font-size: 1.25rem;
+  display: flex;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+}

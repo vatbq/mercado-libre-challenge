@@ -1,0 +1,80 @@
+@import "styles/_global";
+@import "styles/_colors";
+
+.root {
+  padding-left: $layout-padding-horizontal;
+  padding-right: $layout-padding-horizontal;
+  padding-bottom: 2rem;
+}
+
+.productContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: $white;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+
+.productDetailContainer {
+  display: flex;
+}
+
+.productImage {
+  width: 680px;
+  height: auto;
+  min-width: 680px;
+}
+
+.productInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.price {
+  font-size: 46px;
+  margin: 0;
+}
+
+.buyButton {
+  background-color: $button-color;
+  color: $white;
+  border-radius: 0.5rem;
+  min-width: 4rem;
+  padding: 1rem;
+  border: none;
+  font-size: 18px;
+  width: 16rem;
+
+  &:hover {
+    background-color: darken($button-color, 10%);
+    cursor: pointer;
+  }
+}
+
+.title {
+  margin: 0;
+}
+
+.descriptionContainer {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.descriptionTitle {
+  font-size: 28px;
+  margin: 0;
+}
+
+.description {
+  color: $text-color;
+  margin: 0;
+}
+
+.condition {
+  color: $text-color;
+}

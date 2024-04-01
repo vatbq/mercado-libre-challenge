@@ -1,0 +1,19 @@
+@import "styles/_global";
+@import "styles/_colors";
+
+.root {
+  display: flex;
+  flex-direction: column;
+  padding-left: $layout-padding-horizontal;
+  padding-right: $layout-padding-horizontal;
+}
+
+.productsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: $white;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+}

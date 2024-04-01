@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ProductDetail /> renders ProgramCard unchanged 1`] = `
+<div>
+  <div
+    class="root"
+  >
+    <div>
+      Breadcrumb
+    </div>
+    <div
+      class="productContainer"
+    >
+      <div
+        class="productDetailContainer"
+      >
+        <img
+          alt="Product cover"
+          class="productImage"
+          src="https://example.com/product1.jpg"
+        />
+        <div
+          class="productInfo"
+        >
+          <div>
+            <p
+              class="condition"
+            >
+              Nuevo
+               -
+               
+              150
+               vendidos
+            </p>
+            <h2
+              class="title"
+            >
+              Wireless Bluetooth Headphones
+            </h2>
+          </div>
+          <p
+            class="price"
+          >
+            $ 
+            1,234.56
+          </p>
+          <button
+            class="buyButton"
+          >
+            Comprar
+          </button>
+        </div>
+      </div>
+      <div
+        class="descriptionContainer"
+      >
+        <p
+          class="descriptionTitle"
+        >
+          Descripción del producto
+        </p>
+        <p
+          class="description"
+        >
+          High-quality wireless Bluetooth headphones with noise cancellation and up to 20 hours of battery life.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

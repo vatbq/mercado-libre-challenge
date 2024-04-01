@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Products /> renders ProgramCard unchanged 1`] = `
+<div>
+  <div
+    class="root"
+  >
+    <div>
+      Breadcrumb
+    </div>
+    <div
+      class="productsContainer"
+    >
+      <div>
+        ProductCard
+      </div>
+      <div>
+        ProductCard
+      </div>
+    </div>
+  </div>
+</div>
+`;

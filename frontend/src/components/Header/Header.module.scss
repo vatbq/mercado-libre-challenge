@@ -1,0 +1,18 @@
+@import "styles/_colors";
+@import "styles/_global";
+
+.root {
+  background-color: $primary-color;
+  padding-left: $layout-padding-horizontal;
+  padding-right: $layout-padding-horizontal;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.logo {
+  &:hover {
+    cursor: pointer;
+  }
+}

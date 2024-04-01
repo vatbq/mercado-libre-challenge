@@ -1,0 +1,42 @@
+@import "styles/_colors";
+@import "styles/_global";
+
+.root {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 2px 0 $box-shadow-color;
+  border-radius: 2px;
+}
+
+.inputSearch {
+  width: -webkit-fill-available;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+  border: 1px solid $white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.buttonSearch {
+  background-color: $background-color;
+  border: none;
+  border-radius: 0 2px 2px 0;
+  width: 46px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.searchIcon {
+  width: 1rem;
+  height: 1rem;
+}

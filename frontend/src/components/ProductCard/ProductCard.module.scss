@@ -1,0 +1,51 @@
+@import "styles/_colors";
+
+.root {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $box-shadow-color;
+  gap: 1rem;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.productImage {
+  border-radius: 4px;
+  width: 180px;
+  height: 180px;
+}
+
+.productInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 500px;
+}
+
+.price {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.priceContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.freeShippingIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.description {
+  font-size: 18px;
+  margin: 0;
+}
